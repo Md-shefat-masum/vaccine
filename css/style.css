@@ -1,0 +1,140 @@
+:root {
+  --brand: #0364a4;
+  --brand2: #aa4f12;
+  --off_white: rgba(255, 255, 255, 0.8);
+  --white: white;
+  --white2: #f1f1f1;
+  --tr: all linear 0.3s;
+  --black: #433f40;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+body,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+div,
+h6 {
+  font-family: 'Hind Siliguri', sans-serif;
+  transition: var(--tr);
+  margin: 0;
+  padding: 0;
+}
+input:focus {
+  outline: 0;
+}
+header {
+  background: var(--brand);
+}
+.row_section {
+  padding: 30px 0px;
+}
+.info_body {
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  border-bottom: 0;
+}
+.info_body:last-child {
+  border-bottom: 1px solid black;
+}
+.info_body .logo_name {
+  width: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  box-sizing: border-box;
+  border-right: 1px solid black;
+}
+.info_body .logo_name h2 {
+  font-size: 16px;
+  text-align: center;
+}
+.info_body .date,
+.info_body .dose {
+  width: 120px;
+}
+.info_body .date ul,
+.info_body .dose ul {
+  display: block;
+}
+.info_body .date ul li,
+.info_body .dose ul li {
+  width: 100%;
+  color: black;
+  font-size: 12px;
+  text-transform: capitalize;
+  padding: 2px 10px;
+}
+.info_body .dose_body {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.info_body .dose_body .dose {
+  flex: 1;
+}
+.info_body .dose_body .dose ul {
+  border: 1px solid black;
+  display: block;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+}
+.info_body .dose_body .dose ul li {
+  width: 100%;
+  color: black;
+  font-size: 12px;
+  text-transform: capitalize;
+  padding: 2px 10px;
+  border-bottom: 1px solid black;
+}
+.info_body .dose_body .dose ul li:last-child {
+  border-bottom: 0;
+}
+.title {
+  display: flex;
+}
+.title .logo_name {
+  width: 150px;
+  color: var(--brand2);
+  font-weight: 600;
+  text-align: center;
+}
+.title .date {
+  width: 120px;
+  color: var(--brand2);
+  font-weight: 600;
+  text-align: center;
+}
+.title .dose_list {
+  flex: 1;
+  display: flex;
+}
+.title .dose_list ul {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+.title .dose_list ul li {
+  text-align: center;
+  flex: 1;
+  color: var(--brand2);
+  font-weight: 600;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vaccine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png" sizes="32x32" />
+    <link rel="icon" href="images/icon.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="images/icon.png" />
+
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="5000000">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+
+    <meta name="keywords" content="Projonmo, ecommerce">
+    <meta name="description" content="you learn every things about html">
+    <meta name="author" content="mr abdul kuddus">
+    <meta name="copyrigth" content="www.mysite.com">
+    <meta name="revisit" content="5 days">
+
+    <meta property="og:title" content="Projonmo" />
+    <meta property="og:site_name" content="Projonmo" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://" />
+    <meta property="og:image" content="http://" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="http://">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div id="vaccine">
+        <section class="row_section">
+            <div class="container">
+                <div class="title">
+                    <div class="logo_name">Vaccine</div>
+                    <div class="date">Date</div>
+                    <div class="dose_list">
+                        <ul>
+                            <li>1st Dose</li>
+                            <li>2nd Dose</li>
+                            <li>3rd Dose</li>
+                            <li>4th Dose</li>
+                            <li>5th Dose</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info_body" v-for="index in 13" :key="index">
+                    <div class="logo_name">
+                        <h2>Rota virus</h2>
+                    </div>
+                    <div class="date">
+                        <ul>
+                            <li>Due Date</li>
+                            <li>Given Date</li>
+                            <li>Batch Number</li>
+                        </ul>
+                    </div>
+                    <div class="dose_body">
+                        <div class="dose" v-for="item in 5" :key="item">
+                            <ul>
+                                <li>12-May-2021</li>
+                                <li>12-May-2021</li>
+                                <li>12-May-2021</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.8/dist/vue.js"></script> -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
